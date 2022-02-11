@@ -1,0 +1,54 @@
+@import url("../components/pop.css");
+html {
+  scroll-behavior: smooth;
+}
+.header {
+  border-bottom: 1px solid #eee;
+  width: 100%;
+}
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+.brand {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.nav {
+  display: flex;
+  gap: 1rem;
+}
+.nav-border-right {
+  border-right: 1px solid var(--light-gray-color);
+}
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+.nav-link {
+  text-decoration: none;
+  color: var(--dark-color);
+}
+
+.container {
+  height: calc(100vh - 61px);
+  display: flex;
+  align-items: stretch;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sidebar {
+  flex-basis: 300px;
+  border-right: 1px solid var(--light-gray-color);
+}
+.main {
+  flex-basis: calc(100% - 300px);
+  flex-grow: 1;
+  overflow-y: auto;
+}
