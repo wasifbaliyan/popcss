@@ -5,6 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../../css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined"
+      rel="stylesheet"
+    />
     <title>Avatar | 💥 PopCSS Component Library</title>
   </head>
   <body>
@@ -18,18 +26,109 @@
           </ul>
           <span class="nav-border-right"></span>
           <ul class="nav-list">
-            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Docs</a></li>
+            <li class="nav-item">
+              <button onclick="toggleTheme()" class="nav-link">
+                <span class="material-icons-outlined active-theme">
+                  tungsten
+                </span>
+              </button>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span class="material-icons-outlined"> open_in_new </span>
+              </a>
+            </li>
           </ul>
         </nav>
       </div>
     </header>
     <section class="container">
-      <aside class="sidebar">Aside</aside>
+      <aside class="sidebar">
+        <h3 class="sub-heading">Components</h3>
+        <ul class="sidebar-list">
+          <li class="sidebar-item sidebar-item-active">
+            <a class="sidebar-link sidebar-link-active" href="#">Avatar</a>
+          </li>
+          <li class="sidebar-item">
+            <a class="sidebar-link" href="#">Alert</a>
+          </li>
+          <li class="sidebar-item">
+            <a class="sidebar-link" href="#">Button</a>
+          </li>
+          <li class="sidebar-item">
+            <a class="sidebar-link" href="#">Cards</a>
+          </li>
+          <li class="sidebar-item">
+            <a class="sidebar-link" href="#">Lists</a>
+          </li>
+          <li class="sidebar-item">
+            <a class="sidebar-link" href="#">Badge</a>
+          </li>
+          <li class="sidebar-item">
+            <a class="sidebar-link" href="#">Grid</a>
+          </li>
+          <li class="sidebar-item">
+            <a class="sidebar-link" href="#">Image</a>
+          </li>
+        </ul>
+      </aside>
       <main class="main">
-          <p>Main</p>
+        <h2 class="heading">Avatar</h2>
+        <p class="text-primary">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+          beatae, est rerum mollitia excepturi iusto voluptatem magnam
+          dignissimos, fugit voluptate, architecto esse.
+        </p>
+        <h3 class="sub-heading">Examples</h3>
+        <p class="text-secondary">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta fugit
+          amet totam, maxime eveniet minima tenetur velit recusandae assumenda
+          fuga odio debitis asperiores eum commodi cupiditate illum. Inventore,
+          laborum voluptas a perferendis cumque fugiat id officia dicta est
+          aliquam officiis!
+        </p>
+        <div class="component-container"></div>
+        <div class="code-container"></div>
+        <div class="prev-next-container">
+          <a class="prev-next-link" href="#">
+            <span class="material-icons-outlined"> navigate_before </span>
+            <div>
+              <p>PREV</p>
+              <p class="prev-next-link-item">Alerts</p>
+            </div>
+          </a>
+          <a class="prev-next-link" href="#">
+            <div>
+              <p>NEXT</p>
+              <p class="prev-next-link-item">Button</p>
+            </div>
+            <span class="material-icons-outlined"> navigate_next </span>
+          </a>
+        </div>
         <footer class="footer"></footer>
       </main>
     </section>
+    <script>
+      let isLightTheme = true;
+      const root = document.querySelector(":root");
+      function toggleTheme() {
+        isLightTheme = !isLightTheme;
+        if (isLightTheme) {
+          root.style.setProperty("--background-color-primary", "#ffffff");
+          root.style.setProperty("--background-color-secondary", "#f6f7f9");
+          root.style.setProperty("--color-text-primary", "#23272f");
+          root.style.setProperty("--color-text-secondary", "#404756");
+          root.style.setProperty("--background-color-active-link", "#e6f7ff");
+          root.style.setProperty("--color-border", "#e2e8f0");
+        } else {
+          root.style.setProperty("--background-color-primary", "#23272F");
+          root.style.setProperty("--background-color-secondary", "#343A46");
+          root.style.setProperty("--color-text-primary", "#F6F7F9");
+          root.style.setProperty("--color-text-secondary", "#E6E7EA");
+          root.style.setProperty("--background-color-active-link", "#263541");
+          root.style.setProperty("--color-border", "#333333");
+        }
+      }
+    </script>
   </body>
 </html>
