@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="../../assets/favicon.png" />
     <link rel="stylesheet" href="../../css/style.css" />
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -13,7 +14,18 @@
       href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined"
       rel="stylesheet"
     />
-    <title>Avatar | 💥 PopCSS Component Library</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/github-dark.min.css"
+    />
+    <script
+      async
+      src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"
+    ></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+    <title>Avatar | PopCSS Component Library</title>
   </head>
   <body>
     <header class="header">
@@ -88,7 +100,17 @@
           aliquam officiis!
         </p>
         <div class="component-container"></div>
-        <div class="code-container"></div>
+        <div class="code-container">
+          <pre><code>
+            // this is a comment
+
+            let name = "wasif";
+            
+            function printName () {
+              console.log(name);
+            }
+          </code></pre>
+        </div>
         <div class="prev-next-container">
           <a class="prev-next-link" href="#">
             <span class="material-icons-outlined"> navigate_before </span>

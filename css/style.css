@@ -163,8 +163,9 @@ button.nav-link {
   border: 1px solid var(--color-border);
   border-radius: var(--border-radius);
   margin: 2rem 0;
-  padding: 1rem;
-  box-shadow: var(--box-shadow);
+  /* padding: 1rem; */
+  /* box-shadow: var(--box-shadow); */
+  overflow: hidden;
 }
 
 .prev-next-container {
