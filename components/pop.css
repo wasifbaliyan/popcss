@@ -1,15 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 @import url("./avatar/avatar.css");
 :root {
-  --primary-color: #0d6efd;
-  --secondary-color: #6c757d;
-  --success-color: #4a8855;
-  --danger-color: #dd4a45;
-  --warning-color: #f5c004;
-  --info-color: #66ccf1;
-  --light-color: #f8f9fa;
-  --dark-color: #212529;
-  --light-gray-color: #eeeeee;
+  --color-primary: #0d6efd;
+  --color-secondary: #6c757d;
+  --color-success: #4a8855;
+  --color-danger: #dd4a45;
+  --color-warning: #f5c004;
+  --color-info: #66ccf1;
+  --color-light: #f8f9fa;
+  --color-dark: #212529;
+  --color-light-gray: #eeeeee;
 }
 
 *::after,
@@ -26,4 +26,50 @@ html {
 
 body {
   font-family: "Roboto", sans-serif;
+}
+
+/* Utility classes */
+.pop-responsive {
+  width: 100%;
+}
+.pop-rounded {
+  border-radius: 50%;
+}
+
+.pop-bg-primary {
+  background-color: var(--color-primary);
+}
+.pop-bg-secondary {
+  background-color: var(--color-secondary);
+}
+.pop-bg-success {
+  background-color: var(--color-success);
+}
+.pop-bg-danger {
+  background-color: var(--color-danger);
+}
+.pop-bg-warning {
+  background-color: var(--color-warning);
+}
+.pop-bg-info {
+  background-color: var(--color-info);
+}
+
+.pop-text-primary {
+  background-color: var(--color-primary);
+}
+.pop-text-secondary {
+  background-color: var(--color-secondary);
+}
+.pop-text-success {
+  background-color: var(--color-success);
+}
+.pop-text-danger {
+  background-color: var(--color-danger);
+}
+.pop-text-warning {
+  background-color: var(--color-warning);
+}
+.pop-text-info {
+  background-color: var(--color-info);
 }

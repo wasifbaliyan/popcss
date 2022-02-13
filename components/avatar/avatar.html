@@ -22,9 +22,7 @@
       async
       src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"
     ></script>
-    <script>
-      hljs.highlightAll();
-    </script>
+
     <title>Avatar | PopCSS Component Library</title>
   </head>
   <body>
@@ -91,7 +89,7 @@
           beatae, est rerum mollitia excepturi iusto voluptatem magnam
           dignissimos, fugit voluptate, architecto esse.
         </p>
-        <h3 class="sub-heading">Examples</h3>
+        <h3 class="sub-heading">Image Avatar</h3>
         <p class="text-secondary">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta fugit
           amet totam, maxime eveniet minima tenetur velit recusandae assumenda
@@ -99,16 +97,120 @@
           laborum voluptas a perferendis cumque fugiat id officia dicta est
           aliquam officiis!
         </p>
-        <div class="component-container"></div>
+        <div class="component-container">
+          <div class="flex-container">
+            <div class="pop-avatar pop-avatar-sm">
+              <img
+                class="pop-responsive pop-rounded"
+                src="https://picsum.photos/200"
+                alt="Avatar"
+              />
+            </div>
+            <div class="pop-avatar pop-avatar-md">
+              <img
+                class="pop-responsive pop-rounded"
+                src="https://picsum.photos/200"
+                alt="Avatar"
+              />
+            </div>
+            <div class="pop-avatar pop-avatar-lg">
+              <img
+                class="pop-responsive pop-rounded"
+                src="https://picsum.photos/200"
+                alt="Avatar"
+              />
+            </div>
+          </div>
+        </div>
+
         <div class="code-container">
           <pre><code>
-            // this is a comment
+            &lt;div class="pop-avatar pop-avatar-sm"&gt;
+              &lt;img
+                class="pop-responsive pop-rounded"
+                src="https://picsum.photos/200"
+                alt="Avatar"
+              /&gt;
+            &lt;/div&gt;
+            &lt;div class="pop-avatar pop-avatar-md"&gt;
+              &lt;img
+                class="pop-responsive pop-rounded"
+                src="https://picsum.photos/200"
+                alt="Avatar"
+              /&gt;
+            &lt;/div&gt;
+            &lt;div class="pop-avatar pop-avatar-lg"&gt;
+              &lt;img
+                class="pop-responsive pop-rounded"
+                src="https://picsum.photos/200"
+                alt="Avatar"
+              /&gt;
+            &lt;/div&gt;
+          </code></pre>
+        </div>
 
-            let name = "wasif";
-            
-            function printName () {
-              console.log(name);
-            }
+        <h3 class="sub-heading">Text Avatar</h3>
+        <p class="text-secondary">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta fugit
+          amet totam, maxime eveniet minima tenetur velit recusandae assumenda
+          fuga odio debitis asperiores eum commodi cupiditate illum. Inventore,
+          laborum voluptas a perferendis cumque fugiat id officia dicta est
+          aliquam officiis!
+        </p>
+        <div class="component-container">
+          <div class="flex-container">
+            <div class="pop-avatar pop-avatar-sm pop-bg-danger">WB</div>
+            <div class="pop-avatar pop-avatar-md pop-bg-success">JN</div>
+            <div class="pop-avatar pop-avatar-lg pop-bg-warning">PW</div>
+          </div>
+        </div>
+
+        <div class="code-container">
+          <pre><code>
+            &lt;div class="pop-avatar pop-avatar-sm pop-bg-danger">WB&lt;/div&gt;
+            &lt;div class="pop-avatar pop-avatar-md pop-bg-success"&gt;JN&lt;/div&gt;
+            &lt;div class="pop-avatar pop-avatar-lg pop-bg-warning"&gt;PW&lt;/div&gt;
+          </code></pre>
+        </div>
+
+        <h3 class="sub-heading">Icon Avatar</h3>
+        <p class="text-secondary">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta fugit
+          amet totam, maxime eveniet minima tenetur velit recusandae assumenda
+          fuga odio debitis asperiores eum commodi cupiditate illum. Inventore,
+          laborum voluptas a perferendis cumque fugiat id officia dicta est
+          aliquam officiis!
+        </p>
+        <div class="component-container">
+          <div class="flex-container">
+            <div class="pop-avatar pop-avatar-sm pop-bg-danger">
+              <span class="material-icons-outlined md-18">
+                favorite_border
+              </span>
+            </div>
+            <div class="pop-avatar pop-avatar-md pop-bg-primary">
+              <span class="material-icons-outlined"> favorite_border </span>
+            </div>
+            <div class="pop-avatar pop-avatar-lg pop-bg-secondary">
+              <span class="material-icons-outlined"> favorite_border </span>
+            </div>
+          </div>
+        </div>
+        <div class="code-container">
+          <pre><code>
+           &lt;div class="pop-avatar pop-avatar-sm pop-bg-danger"&gt;
+             &lt;span class="material-icons-outlined"&gt;
+                favorite_border
+             &lt;/span&gt;
+           &lt;/div&gt;
+
+           &lt;div class="pop-avatar pop-avatar-md pop-bg-primary"&gt;
+             &lt;span class="material-icons-outlined"&gt; favorite_border&lt;/span&gt;
+           &lt;/div&gt;
+
+           &lt;div class="pop-avatar pop-avatar-lg pop-bg-secondary"&gt;
+             &lt;span class="material-icons-outlined"&gt; favorite_border&lt;/span&gt;
+           &lt;/div&gt;
           </code></pre>
         </div>
         <div class="prev-next-container">
@@ -127,10 +229,39 @@
             <span class="material-icons-outlined"> navigate_next </span>
           </a>
         </div>
-        <footer class="footer"></footer>
+        <footer class="footer">
+          <div class="footer-copyright">&copy;2022 wasifbaliyan</div>
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span class="material-icons-outlined md-18">
+                  favorite_border
+                </span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span class="material-icons-outlined md-18"> favorite </span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span class="material-icons-outlined md-18">
+                  favorite_border
+                </span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span class="material-icons-outlined md-18"> favorite </span>
+              </a>
+            </li>
+          </ul>
+        </footer>
       </main>
     </section>
     <script>
+      hljs.initHighlightingOnLoad();
       let isLightTheme = true;
       const root = document.querySelector(":root");
       function toggleTheme() {
