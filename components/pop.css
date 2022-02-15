@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 @import url("./avatar/avatar.css");
+@import url("./alert/alert.css");
 :root {
   --color-primary: #0d6efd;
   --color-secondary: #6c757d;
@@ -56,20 +57,20 @@ body {
 }
 
 .pop-text-primary {
-  background-color: var(--color-primary);
+  color: var(--color-primary);
 }
 .pop-text-secondary {
-  background-color: var(--color-secondary);
+  color: var(--color-secondary);
 }
 .pop-text-success {
-  background-color: var(--color-success);
+  color: var(--color-success);
 }
 .pop-text-danger {
-  background-color: var(--color-danger);
+  color: var(--color-danger);
 }
 .pop-text-warning {
-  background-color: var(--color-warning);
+  color: var(--color-warning);
 }
 .pop-text-info {
-  background-color: var(--color-info);
+  color: var(--color-info);
 }

@@ -211,3 +211,9 @@ button.nav-link {
   align-items: center;
   justify-content: center;
 }
+
+.flex-container-col {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
