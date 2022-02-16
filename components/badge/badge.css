@@ -1,0 +1,11 @@
+.pop-badge {
+  background-color: var(--color-primary);
+  color: var(--color-light);
+  padding: 0.188rem 0.313rem;
+  border-radius: 0.75rem;
+  top: -0.625rem;
+  right: -0.625rem;
+  min-width: 1.5rem;
+  display: flex;
+  justify-content: center;
+}
