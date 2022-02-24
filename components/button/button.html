@@ -23,7 +23,7 @@
       src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"
     ></script>
 
-    <title>Avatar | PopCSS Component Library</title>
+    <title>Button | PopCSS Component Library</title>
   </head>
   <body>
     <header class="header">
@@ -56,10 +56,8 @@
       <aside class="sidebar">
         <h3 class="sub-heading">Components</h3>
         <ul class="sidebar-list">
-          <li class="sidebar-item sidebar-item-active">
-            <a class="sidebar-link sidebar-link-active" href="./avatar.html"
-              >Avatar</a
-            >
+          <li class="sidebar-item">
+            <a class="sidebar-link" href="./../avatar/avatar.html">Avatar</a>
           </li>
           <li class="sidebar-item">
             <a class="sidebar-link" href="./../alert/alert.html">Alert</a>
@@ -67,8 +65,10 @@
           <li class="sidebar-item">
             <a class="sidebar-link" href="./../badge/badge.html">Badge</a>
           </li>
-          <li class="sidebar-item">
-            <a class="sidebar-link" href="./../button/button.html">Button</a>
+          <li class="sidebar-item sidebar-item-active">
+            <a class="sidebar-link sidebar-link-active" href="./button.html"
+              >Button</a
+            >
           </li>
           <li class="sidebar-item">
             <a class="sidebar-link" href="#">Lists</a>
@@ -85,13 +85,13 @@
         </ul>
       </aside>
       <main class="main">
-        <h2 class="heading">Avatar</h2>
+        <h2 class="heading">Buttons</h2>
         <p class="text-primary">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
           beatae, est rerum mollitia excepturi iusto voluptatem magnam
           dignissimos, fugit voluptate, architecto esse.
         </p>
-        <h3 class="sub-heading">Image Avatar</h3>
+        <h3 class="sub-heading">Basic Buttons</h3>
         <p class="text-secondary">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta fugit
           amet totam, maxime eveniet minima tenetur velit recusandae assumenda
@@ -101,57 +101,40 @@
         </p>
         <div class="component-container">
           <div class="flex-container">
-            <div class="pop-avatar pop-avatar-sm">
-              <img
-                class="pop-responsive pop-rounded"
-                src="https://picsum.photos/200"
-                alt="Avatar"
-              />
-            </div>
-            <div class="pop-avatar pop-avatar-md">
-              <img
-                class="pop-responsive pop-rounded"
-                src="https://picsum.photos/200"
-                alt="Avatar"
-              />
-            </div>
-            <div class="pop-avatar pop-avatar-lg">
-              <img
-                class="pop-responsive pop-rounded"
-                src="https://picsum.photos/200"
-                alt="Avatar"
-              />
-            </div>
+            <button class="pop-btn pop-bg-warning">Go to home</button>
           </div>
         </div>
 
         <div class="code-container">
           <pre><code>
-            &lt;div class="pop-avatar pop-avatar-sm"&gt;
-              &lt;img
-                class="pop-responsive pop-rounded"
-                src="https://picsum.photos/200"
-                alt="Avatar"
-              /&gt;
+            &lt;div class="pop-avatar pop-avatar-sm pop-relative"&gt;
+                &lt;img
+                  class="pop-responsive pop-rounded"
+                  src="https://picsum.photos/200"
+                  alt="Avatar"
+                /&gt;
+                &lt;span class="pop-badge pop-absolute"&gt;99+&lt;/span&gt;
             &lt;/div&gt;
-            &lt;div class="pop-avatar pop-avatar-md"&gt;
-              &lt;img
-                class="pop-responsive pop-rounded"
-                src="https://picsum.photos/200"
-                alt="Avatar"
-              /&gt;
+            &lt;div class="pop-avatar pop-avatar-md pop-relative"&gt;
+                &lt;img
+                  class="pop-responsive pop-rounded"
+                  src="https://picsum.photos/200"
+                  alt="Avatar"
+                /&gt;
+                &lt;span class="pop-badge pop-absolute pop-bg-danger"&gt;5&lt;/span&gt;
             &lt;/div&gt;
-            &lt;div class="pop-avatar pop-avatar-lg"&gt;
-              &lt;img
-                class="pop-responsive pop-rounded"
-                src="https://picsum.photos/200"
-                alt="Avatar"
-              /&gt;
+            &lt;div class="pop-avatar pop-avatar-lg pop-relative"&gt;
+                &lt;img
+                  class="pop-responsive pop-rounded"
+                  src="https://picsum.photos/200"
+                  alt="Avatar"
+                /&gt;
+                &lt;span class="pop-badge pop-absolute pop-bg-info"&gt;99+&lt;/span&gt;
             &lt;/div&gt;
           </code></pre>
         </div>
 
-        <h3 class="sub-heading">Text Avatar</h3>
+        <h3 class="sub-heading">Badge on Text Avatar</h3>
         <p class="text-secondary">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta fugit
           amet totam, maxime eveniet minima tenetur velit recusandae assumenda
@@ -161,21 +144,39 @@
         </p>
         <div class="component-container">
           <div class="flex-container">
-            <div class="pop-avatar pop-avatar-sm pop-bg-danger">WB</div>
-            <div class="pop-avatar pop-avatar-md pop-bg-success">JN</div>
-            <div class="pop-avatar pop-avatar-lg pop-bg-warning">PW</div>
+            <div class="pop-avatar pop-avatar-sm pop-bg-danger pop-relative">
+              WB
+              <span class="pop-badge pop-absolute">99+</span>
+            </div>
+            <div class="pop-avatar pop-avatar-md pop-bg-success pop-relative">
+              JN
+              <span class="pop-badge pop-absolute">99+</span>
+            </div>
+            <div class="pop-avatar pop-avatar-lg pop-bg-warning pop-relative">
+              PW
+              <span class="pop-badge pop-absolute">99+</span>
+            </div>
           </div>
         </div>
 
         <div class="code-container">
           <pre><code>
-            &lt;div class="pop-avatar pop-avatar-sm pop-bg-danger">WB&lt;/div&gt;
-            &lt;div class="pop-avatar pop-avatar-md pop-bg-success"&gt;JN&lt;/div&gt;
-            &lt;div class="pop-avatar pop-avatar-lg pop-bg-warning"&gt;PW&lt;/div&gt;
+            &lt;div class="pop-avatar pop-avatar-sm pop-bg-danger pop-relative"&gt;
+                WB
+                &lt;span class="pop-badge pop-absolute"&gt;99+&lt;/span&gt;
+            &lt;/div&gt;
+            &lt;div class="pop-avatar pop-avatar-md pop-bg-success pop-relative"&gt;
+                JN
+                &lt;span class="pop-badge pop-absolute"&gt;99+&lt;/span&gt;
+            &lt;/div&gt;
+            &lt;div class="pop-avatar pop-avatar-lg pop-bg-warning pop-relative"&gt;
+                PW
+                &lt;span class="pop-badge pop-absolute"&gt;99+&lt;/span&gt;
+            &lt;/div&gt;
           </code></pre>
         </div>
 
-        <h3 class="sub-heading">Icon Avatar</h3>
+        <h3 class="sub-heading">Badge on Icons</h3>
         <p class="text-secondary">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta fugit
           amet totam, maxime eveniet minima tenetur velit recusandae assumenda
@@ -185,42 +186,48 @@
         </p>
         <div class="component-container">
           <div class="flex-container">
-            <div class="pop-avatar pop-avatar-sm pop-bg-danger">
-              <span class="material-icons-outlined md-18">
-                favorite_border
-              </span>
+            <div class="pop-avatar pop-avatar-sm pop-relative">
+              <span class="material-icons-outlined md-18"> phone_in_talk </span>
+              <span class="pop-badge pop-absolute">99+</span>
             </div>
-            <div class="pop-avatar pop-avatar-md pop-bg-primary">
-              <span class="material-icons-outlined"> favorite_border </span>
+            <div class="pop-avatar pop-avatar-md pop-relative">
+              <span class="material-icons-outlined"> notifications </span>
+              <span class="pop-badge pop-absolute">99+</span>
             </div>
-            <div class="pop-avatar pop-avatar-lg pop-bg-secondary">
-              <span class="material-icons-outlined"> favorite_border </span>
+            <div class="pop-avatar pop-avatar-lg pop-relative">
+              <span class="material-icons-outlined"> shopping_cart </span>
+              <span class="pop-badge pop-absolute">99+</span>
             </div>
           </div>
         </div>
         <div class="code-container">
           <pre><code>
-           &lt;div class="pop-avatar pop-avatar-sm pop-bg-danger"&gt;
-             &lt;span class="material-icons-outlined"&gt;
-                favorite_border
-             &lt;/span&gt;
-           &lt;/div&gt;
-
-           &lt;div class="pop-avatar pop-avatar-md pop-bg-primary"&gt;
-             &lt;span class="material-icons-outlined"&gt; favorite_border&lt;/span&gt;
-           &lt;/div&gt;
-
-           &lt;div class="pop-avatar pop-avatar-lg pop-bg-secondary"&gt;
-             &lt;span class="material-icons-outlined"&gt; favorite_border&lt;/span&gt;
-           &lt;/div&gt;
+            &lt;div class="pop-avatar pop-avatar-sm pop-relative"&gt;
+                &lt;span class="material-icons-outlined md-18"&gt; phone_in_talk &lt;/span&gt;
+                &lt;span class="pop-badge pop-absolute"&gt;99+&lt;/span&gt;
+            &lt;/div&gt;
+            &lt;div class="pop-avatar pop-avatar-md pop-relative"&gt;
+                &lt;span class="material-icons-outlined"&gt; notifications &lt;/span&gt;
+                &lt;span class="pop-badge pop-absolute"&gt;99+&lt;/span&gt;
+            &lt;/div&gt;
+            &lt;div class="pop-avatar pop-avatar-lg pop-relative"&gt;
+                &lt;span class="material-icons-outlined"&gt; shopping_cart &lt;/span&gt;
+                &lt;span class="pop-badge pop-absolute"&gt;99+&lt;/span&gt;
+            &lt;/div&gt;
           </code></pre>
         </div>
         <div class="prev-next-container">
-          <span> </span>
-          <a class="prev-next-link" href="./../alert/alert.html">
+          <a class="prev-next-link" href="./../badge/badge.html">
+            <span class="material-icons-outlined"> navigate_before </span>
+            <div>
+              <p>PREV</p>
+              <p class="prev-next-link-item">Badge</p>
+            </div>
+          </a>
+          <a class="prev-next-link" href="#">
             <div>
               <p>NEXT</p>
-              <p class="prev-next-link-item">Alert</p>
+              <p class="prev-next-link-item">Button</p>
             </div>
             <span class="material-icons-outlined"> navigate_next </span>
           </a>
